@@ -11,8 +11,29 @@ app.set('view engine', 'pug')
 
 // home route
 app.get('/', function(req, res){
+  let articles = [
+    {
+      id: 1,
+      title: "Article",
+      author: 'jasterix',
+      body: 'This is an article'
+    },
+    {
+      id: 2,
+      title: "Article",
+      author: 'other',
+      body: 'This is an article'
+    },
+    {
+      id: 2,
+      title: "Article",
+      author: 'jasterix',
+      body: 'This is an article'
+    }
+  ]
   res.render('index', {
-    title: 'Articles'
+    title: 'Articles',
+    articles: articles
   })
 })
 
