@@ -14,20 +14,26 @@ app.get('/', function(req, res){
   let articles = [
     {
       id: 1,
-      title: "Article",
+      title: "Article 1",
       author: 'jasterix',
       body: 'This is an article'
     },
     {
       id: 2,
-      title: "Article",
+      title: "Article 2",
       author: 'other',
       body: 'This is an article'
     },
     {
-      id: 2,
-      title: "Article",
+      id: 3,
+      title: "Article 3",
       author: 'jasterix',
+      body: 'This is an article'
+    },
+    {
+      id: 4,
+      title: "Article 4",
+      author: 'someone new',
       body: 'This is an article'
     }
   ]
